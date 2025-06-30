@@ -1,3 +1,4 @@
+# MAIN
 # A little date with logic
 name = input("What's your name? ")
 age = int(input("And your age? "))
