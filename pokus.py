@@ -6,8 +6,7 @@ from datetime import datetime
 # Store the original background color so it can be restored
 original_bg = None
 
-# Variable and entry for URL input with a default value
-url_var = tk.StringVar(value='https://www.idnes.cz')
+
 
 
 def download_html():
@@ -40,6 +39,9 @@ def restore_color():
 
 root = tk.Tk()
 root.title('Pokus Form')
+
+# Variable and entry for URL input with a default value
+url_var = tk.StringVar(value='https://www.idnes.cz')
 
 # Entry for the URL so the user can specify where to download from
 url_entry = tk.Entry(root, textvariable=url_var, width=40)
